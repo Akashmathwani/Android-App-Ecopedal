@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".complaintActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="365dp"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="casual"
+        android:text="Register A complaint"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/complaintSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="163dp"
+        android:ems="10"
+        android:hint="Complaint Subject"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/complaintMessage"
+        android:layout_width="338dp"
+        android:layout_height="182dp"
+        android:layout_alignStart="@+id/textview"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="281dp"
+        android:ems="10"
+        android:foregroundGravity="top"
+        android:gravity="top"
+        android:hint="Enter Message here"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginLeft="106dp"
+        android:layout_marginBottom="76dp"
+        android:background="?android:attr/colorFocusedHighlight"
+        android:onClick="registerComplaint"
+        android:text="SUBMIT COMPLAINT" />
+</RelativeLayout>
